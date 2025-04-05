@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suryanamaskar - Daily Reminder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Suryanamaskar</h1>
+    <p>Your daily workout reminder</p>
+  </header>
+
+  <main>
+    <section class="quote">
+      <h2>Daily Motivation</h2>
+      <p id="dailyQuote">Loading quote...</p>
+    </section>
+
+    <section class="reminder">
+      <h2>Today's Reminder</h2>
+      <p>Don't forget your workout today!</p>
+      <button onclick="alert('Great job! Stay consistent!')">I did it!</button>
+    </section>
+
+    <section class="habit-tracker">
+      <h2>Habit Tracker</h2>
+      <p>Mark the days you completed your workout:</p>
+      <div id="habitGrid"></div>
+    </section>
+
+    <section class="workout-log">
+      <h2>Workout Log</h2>
+      <textarea id="logInput" placeholder="What workout did you do today?"></textarea>
+      <button onclick="saveLog()">Save Log</button>
+      <p id="savedMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Suryanamaskar | Stay consistent, stay fit.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
